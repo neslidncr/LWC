@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="LWC 3" icon-name="custom:custom81">
+
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter your name" onchange={handleInputChange}></lightning-input>
+        </div>
+        <div>
+            <div class="slds-p-around_medium lgc-bg"></div>
+
+            <p> Hello:{textValue}!</p>
+            
+        </div>
+        <lightning-button 
+        variant="success" 
+        label="Reset" 
+        title="Reset" 
+        onclick={handleButtonClick} 
+        class="slds-m-left_x-small"></lightning-button>
+
+
+    </lightning-card>
+</template>

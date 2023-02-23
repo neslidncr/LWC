@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="LWC 12">
+        <lightning-card title="LWC 12- Wire Apex Method" icon-name="custom:custom63">
+            <div class="slds-m-around_medium">
+                <template lwc:if={accounts.data}>
+                    <template for:each={accounts.data} for:item="account">
+                        <p key={account.Id}>{account.Name}</p>
+                    </template>
+                </template>
+                
+            </div>
+        </lightning-card>
+
+
+    </lightning-card>
+</template>
